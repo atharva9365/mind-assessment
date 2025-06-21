@@ -41,7 +41,7 @@ const Project = () => {
         </div>
 
         {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-4  mt-4">
           {/* Left Sidebar */}
           <div className="space-y-4 md:col-span-1 bg-[#cccc99] p-2 rounded-sm">
             <h2 className="bg-white text-black text-center font-bold p-1 text-sm rounded">
