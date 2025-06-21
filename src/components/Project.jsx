@@ -15,7 +15,7 @@ const Project = () => {
       <div className=" max-w-[1100px] mx-auto p-4">
         <div className="mb-4">
           <div className="flex items-center justify-between">
-            <img src={logo} alt="Aalochana Logo" className="w-[300px] h-auto" />
+            <img src={logo} alt="Aalochana Logo" className="w-[320px] h-auto" />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden text-white bg-[#ef5727] px-3 py-1 rounded"
@@ -25,7 +25,7 @@ const Project = () => {
           </div>
 
           {/* Nav Links */}
-          <nav className="bg-[#ef5727] rounded-sm mt-2 cursor-pointer">
+          <nav className="bg-[#ef5727] rounded-sm mt-2 cursor-pointer w-full max-w-[800px]">
             <ul
               className={`${
                 isOpen ? "flex" : "hidden"
@@ -61,7 +61,7 @@ const Project = () => {
         </div>
 
         {/* Main Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-4  mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-4">
           {/* Left Sidebar */}
           <div className="space-y-4 md:col-span-1 bg-[#cccc99] p-2 rounded-sm">
             <h2 className="bg-white text-black text-center font-bold p-1 text-sm rounded">
