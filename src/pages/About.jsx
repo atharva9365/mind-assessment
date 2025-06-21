@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import logo from "../assets/logo.png";
-import hero from "../assets/heroimg.jpg";
 import sidebarimg from "../assets/sidebarimg.jpg";
 import { Link } from 'react-router-dom';
 
@@ -10,7 +9,7 @@ const About = () => {
 
   return (
     <>
-      <div className="bg-[url('./assets/backgroundimg.jpg')] bg-cover bg-center font-sans text-sm min-h-screen">
+      <div className="bg-[url('./assets/backgroundimg.jpg')] bg-cover bg-center font-sans text-sm h-screen">
         <div className=" max-w-[1100px] mx-auto p-4">
           <div className="mb-4">
             <div className="flex items-center justify-between">
@@ -66,16 +65,25 @@ const About = () => {
           {/* Main Grid */}
           <div className="grid grid-cols-1 md:grid-cols-4  mt-4">
             {/* Left Sidebar */}
-            <div className="space-y-4 md:col-span-1 bg-[#cccc99] p-2 rounded-sm">
+            <div className="md:col-span-1 bg-[#cccc99] p-2 rounded-sm">
               {[
                 {
-                  title: "Resource Center",
+                  title: "MISSION AND VISION",
                 },
                 {
-                  title: "Samvadini",
+                  title: "OBJECTIVES",
                 },
                 {
-                  title: "Muskaan",
+                  title: "BOARD OF TRUSTEES",
+                },
+                {
+                  title: "STAFF",
+                },
+                {
+                  title: "VOLUNTEERS",
+                },
+                {
+                  title: "MEDIA COVERAGE",
                 },
               ].map((item, i) => (
                 <div

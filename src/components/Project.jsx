@@ -3,13 +3,15 @@ import logo from "../assets/logo.png";
 import hero from "../assets/heroimg.jpg";
 import sidebarimg from "../assets/sidebarimg.jpg";
 import { Link } from "react-router-dom";
+import back from "../assets/backgroundimg.jpg"
 
 const Project = () => {
     
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-[url('./assets/backgroundimg.jpg')] bg-cover bg-center font-sans text-sm min-h-screen">
+   <div style={{ backgroundImage: `url(${back})` }} className="bg-cover font-sans text-sm h-screen">
+
       <div className=" max-w-[1100px] mx-auto p-4">
         <div className="mb-4">
           <div className="flex items-center justify-between">
@@ -84,7 +86,7 @@ const Project = () => {
                 className="bg-[#dfe5c5] rounded-lg p-2 border-[8px] border-white"
               >
                 <h3 className="font-semibold text-[20px]">{item.title}</h3>
-                <p className="text-xs mt-1 font-bold mt-2">{item.desc}</p>
+                <p className="text-xs mt-2 font-bold">{item.desc}</p>
                 <p className="text-sm text-red-800 font-bold mt-1">Read More</p>
               </div>
             ))}
