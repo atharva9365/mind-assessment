@@ -67,32 +67,23 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-4  mt-4">
             {/* Left Sidebar */}
             <div className="space-y-4 md:col-span-1 bg-[#cccc99] p-2 rounded-sm">
-              <h2 className="bg-white text-black text-center font-bold p-1 text-sm rounded">
-                CURRENT PROGRAMS
-              </h2>
               {[
                 {
                   title: "Resource Center",
-                  desc: `Aalochana's bilingual resource centre makes available a variety of local, national, and international resources on women.`,
                 },
                 {
                   title: "Samvadini",
-                  desc: `Samvadini is Aalochana's mobile resource centre that works with NGOs and CBOs in Pune district to create awareness about women’s rights.`,
                 },
                 {
                   title: "Muskaan",
-                  desc: `Muskaan, an Aalochana initiative against child sexual abuse, has been working since 2000 to create awareness, and provide counseling and support to children and their families.`,
                 },
               ].map((item, i) => (
                 <div
                   key={i}
-                  className="bg-[#dfe5c5] rounded-lg p-2 border-[8px] border-white"
+                  className=""
                 >
-                  <h3 className="font-semibold text-[20px]">{item.title}</h3>
-                  <p className="text-xs mt-2 font-bold">{item.desc}</p>
-                  <p className="text-sm text-red-800 font-bold mt-1">
-                    Read More
-                  </p>
+                  <h3 className="font-semibold text-[16px] text-center cursor-pointer">{item.title}</h3>
+                  <div className="border border-black border-dotted my-3"></div>
                 </div>
               ))}
             </div>
