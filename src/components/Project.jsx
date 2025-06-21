@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import hero from "../assets/heroimg.jpg";
 import sidebarimg from "../assets/sidebarimg.jpg";
+import { Link } from "react-router-dom";
 
 const Project = () => {
     
@@ -10,7 +11,6 @@ const Project = () => {
   return (
     <div className="bg-[url('./assets/backgroundimg.jpg')] bg-cover bg-center font-sans text-sm min-h-screen">
       <div className=" max-w-[1100px] mx-auto p-4">
-
         <div className="mb-4">
           <div className="flex items-center justify-between">
             <img src={logo} alt="Aalochana Logo" className="w-[300px] h-auto" />
@@ -29,13 +29,31 @@ const Project = () => {
                 isOpen ? "flex" : "hidden"
               } md:flex flex-col md:flex-row font-bold text-sm gap-4 py-2 px-4 text-black`}
             >
-              <li className="md:border-r md:pr-4 hover:text-white hover:text-black px-2 ">HOME</li>
-              <li className="md:border-r md:pr-4 hover:text-white hover:text-black px-2">ABOUT</li>
-              <li className="md:border-r md:pr-4 hover:text-white hover:text-black px-2">PROGRAMS</li>
-              <li className="md:border-r md:pr-4 hover:text-white hover:text-black px-2">PUBLICATIONS</li>
-              <li className="md:border-r md:pr-4 hover:text-white hover:text-black px-2">RESEARCH</li>
-              <li className="md:border-r md:pr-4 hover:text-white hover:text-black px-2">ACTIVITIES</li>
-              <li className="md:border-r md:pr-4 hover:text-white hover:text-black px-2">SUPPORTERS</li>
+              <Link to='/'>
+                 <li className="md:border-r md:pr-4 hover:text-white  px-2 ">
+                  HOME
+                </li>
+              </Link>
+              <Link to='/about'>
+                <li className="md:border-r md:pr-4 hover:text-white px-2">
+                ABOUT
+              </li>
+              </Link>
+              <li className="md:border-r md:pr-4 hover:text-white px-2">
+                PROGRAMS
+              </li>
+              <li className="md:border-r md:pr-4 hover:text-white px-2">
+                PUBLICATIONS
+              </li>
+              <li className="md:border-r md:pr-4 hover:text-white  px-2">
+                RESEARCH
+              </li>
+              <li className="md:border-r md:pr-4 hover:text-white px-2">
+                ACTIVITIES
+              </li>
+              <li className="md:border-r md:pr-4 hover:text-white  px-2">
+                SUPPORTERS
+              </li>
             </ul>
           </nav>
         </div>
@@ -67,9 +85,7 @@ const Project = () => {
               >
                 <h3 className="font-semibold text-[20px]">{item.title}</h3>
                 <p className="text-xs mt-1 font-bold mt-2">{item.desc}</p>
-                <p className="text-sm text-red-800 font-bold mt-1">
-                  Read More
-                </p>
+                <p className="text-sm text-red-800 font-bold mt-1">Read More</p>
               </div>
             ))}
           </div>
@@ -136,9 +152,12 @@ const Project = () => {
               <p className="text-xs font-bold mt-2">PHONE</p>
               <p className="text-xs">+91-20-25678133</p>
               <p className="text-xs font-bold mt-2">EMAIL</p>
-              <p className="text-xs text-blue-700 break-all">
+              <a
+                href="mailto:aalochanapune@gmail.com"
+                className="text-sm text-blue-700 break-all"
+              >
                 aalochanapune@gmail.com
-              </p>
+              </a>
             </div>
           </div>
         </div>
