@@ -8,6 +8,7 @@ import back from "../assets/backgroundimg.jpg"
 const Project = () => {
     
   const [isOpen, setIsOpen] = useState(false);
+  
 
   return (
    <div style={{ backgroundImage: `url(${back})` }} className="bg-cover font-sans text-sm h-screen">
@@ -121,8 +122,8 @@ const Project = () => {
 
           {/* Right Sidebar */}
           <div className="space-y-4 md:col-span-1 bg-[#cccc99] p-2">
-            <div className="bg-[#dfe5c5] rounded p-2 border-[8px] border-white">
-              <h3 className="text-[18px] font-bold text-[#7d0000] bg-[#cccc99] px-2 py-1 rounded">
+            <div className="bg-[#dfe5c5] rounded p-2 border-[8px] border-[#dfe5c5]">
+              <h3 className="text-[18px] font-bold text-[#7d0000] bg-[#cccc99] px-2 py-1 rounded hover:text-white cursor-pointer">
                 PHOTO GALLERY
               </h3>
               <div className="grid grid-cols-3 gap-1 mt-2">
@@ -137,26 +138,26 @@ const Project = () => {
               </div>
             </div>
 
-            <div className="bg-[#dfe5c5] rounded p-2 border-[8px] border-white">
-              <h3 className="text-[18px] font-bold text-[#7d0000] bg-[#cccc99] px-2 py-1 rounded">
+            <div className="bg-[#dfe5c5] rounded p-2 border-[8px] border-[#dfe5c5]">
+              <h3 className="text-[18px] font-bold text-[#7d0000] bg-[#cccc99] px-2 py-1 rounded hover:text-white cursor-pointer">
                 BLOG
               </h3>
-              <p className="text-xs font-semibold mt-2">
+              <p className="text-sm text-black font-bold mt-2">
                 Visit Aalochana's blog regularly for the latest news, views, and
                 activity updates.
               </p>
             </div>
 
-            <div className="bg-[#dfe5c5] rounded p-2 border-[8px] border-white">
-              <h3 className="text-[18px] font-bold text-[#7d0000] bg-[#cccc99] px-2 py-1 rounded">
+            <div className="bg-[#dfe5c5] rounded p-2 border-[8px] border-[#dfe5c5]">
+              <h3 className="text-[18px] font-bold text-[#7d0000] bg-[#cccc99] px-2 py-1 rounded hover:text-white cursor-pointer">
                 CONTACT US
               </h3>
-              <p className="text-xs font-bold mt-2">PHONE</p>
-              <p className="text-xs">+91-20-25678133</p>
-              <p className="text-xs font-bold mt-2">EMAIL</p>
+              <p className="text-sm font-bold mt-2">PHONE</p>
+              <p className="text-sm font-bold">+91-20-25678133</p>
+              <p className="text-sm font-bold mt-2">EMAIL</p>
               <a
                 href="mailto:aalochanapune@gmail.com"
-                className="text-sm text-blue-700 break-all"
+                className="text-base font-bold text-blue-700 break-all"
               >
                 aalochanapune@gmail.com
               </a>
