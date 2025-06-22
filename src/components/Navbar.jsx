@@ -103,9 +103,9 @@ const Navbar = () => {
 
           <button
             type="button"
-            className="bg-white text-gray-600 border border-gray-300 mt-6 text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full"
+            className="bg-blue-900 text-white border border-gray-300 mt-6 text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full"
           >
-            Get started
+            Donate
           </button>
         </div>
       )}
