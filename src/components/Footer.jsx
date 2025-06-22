@@ -54,7 +54,7 @@ const Footer = () => {
       </div>
 
       <p className="pt-4 text-center text-xs md:text-sm pb-5">
-        © 2024 Aalochana. All Rights Reserved.
+        © 2025 Aalochana. All Rights Reserved.
       </p>
     </footer>
   );
