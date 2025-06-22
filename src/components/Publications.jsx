@@ -38,7 +38,7 @@ const Publications = () => {
         className="container mx-auto  px-6 pt-20 md:px-20 lg:px-32  w-full overflow-hidden"
         id="Publications"
       >
-        <div className="text-center py-10" id="Programs">
+        <div className="text-center py-10">
         <h1 className="text-4xl font-bold text-blue-900 inline-block border-b-4 border-blue-900 pb-2">
           Publications
         </h1>
