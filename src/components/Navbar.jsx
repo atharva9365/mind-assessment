@@ -86,17 +86,22 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#" className="text-sm">
-                Services
+                About Us
               </a>
             </li>
             <li>
               <a href="#" className="text-sm">
-                Portfolio
+                Programs
               </a>
             </li>
             <li>
               <a href="#" className="text-sm">
-                Pricing
+                Publications
+              </a>
+            </li>
+             <li>
+              <a href="#" className="text-sm">
+                Contact
               </a>
             </li>
           </ul>
